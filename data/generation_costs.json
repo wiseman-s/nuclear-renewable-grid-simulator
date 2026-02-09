@@ -1,0 +1,8 @@
+{
+  "nuclear":     {"variable_cost_usd_per_mwh": 10,   "capacity_mw": 1000, "ramp_mw_per_h": 50},
+  "geothermal":  {"variable_cost_usd_per_mwh": 12,   "capacity_mw": 950,  "ramp_mw_per_h": 100},
+  "hydro":       {"variable_cost_usd_per_mwh": 5,    "capacity_mw": 870,  "ramp_mw_per_h": 200},
+  "wind":        {"variable_cost_usd_per_mwh": 0,    "capacity_mw": 430,  "ramp_mw_per_h": 430},
+  "solar":       {"variable_cost_usd_per_mwh": 0,    "capacity_mw": 440,  "ramp_mw_per_h": 440},
+  "thermal":     {"variable_cost_usd_per_mwh": 120,  "capacity_mw": 600,  "ramp_mw_per_h": 300}
+}

@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+matplotlib
+plotly
+streamlit
+scikit-learn
+reportlab>=4.0
