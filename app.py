@@ -106,7 +106,7 @@ with st.sidebar.expander("About NRGS"):
     Contact: **allinmer57@gmail.com**
     """)
 
-# ─── HOME ─── (no image, just text)
+# ─── HOME ───
 if page == "🏠 Home":
     st.title("🇰🇪 Nuclear & Renewable Grid Simulator (NRGS)")
     st.markdown("**v2.1 MVP** — Supporting Kenya's clean energy transition")
@@ -124,8 +124,10 @@ if page == "🏠 Home":
         """)
 
     with col2:
-        st.markdown("**Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid**")
-        st.info("Visual representation of Kenya's renewable energy progress (image removed for reliability).")
+        st.image(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Lake_Turkana_Wind_Power.jpg/800px-Lake_Turkana_Wind_Power.jpg",
+            caption="Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid"
+        )
 
     st.divider()
     st.subheader("Key Benefits")
