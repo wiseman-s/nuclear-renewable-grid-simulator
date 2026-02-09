@@ -106,7 +106,7 @@ with st.sidebar.expander("About NRGS"):
     Contact: **allinmer57@gmail.com**
     """)
 
-# ─── HOME ───
+# ─── HOME ─── (no image, just text)
 if page == "🏠 Home":
     st.title("🇰🇪 Nuclear & Renewable Grid Simulator (NRGS)")
     st.markdown("**v2.1 MVP** — Supporting Kenya's clean energy transition")
@@ -124,15 +124,8 @@ if page == "🏠 Home":
         """)
 
     with col2:
-        # Reliable Kenya wind farm image (Lake Turkana – Wikimedia Commons)
-        try:
-            st.image(
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Lake_Turkana_Wind_Power.jpg/800px-Lake_Turkana_Wind_Power.jpg",
-                caption="Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid"
-            )
-        except Exception:
-            st.warning("Image could not load – showing text description instead.")
-            st.info("Lake Turkana Wind Power farm – Kenya's flagship renewable project contributing to stable, low-carbon electricity.")
+        st.markdown("**Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid**")
+        st.info("Visual representation of Kenya's renewable energy progress (image removed for reliability).")
 
     st.divider()
     st.subheader("Key Benefits")
@@ -226,6 +219,13 @@ elif page == "🌐 Grid Dispatch":
     cols[1].metric("Unserved Energy", f"{unserved_mwh:,.0f} MWh")
     cols[2].metric("Unserved %", f"{unserved_pct:.2f}%", delta_color="inverse")
 
+    st.markdown("""
+    **Explanation of metrics:**
+    - **Total Dispatched** — Total electricity supplied over 24 hours (equals total demand if no unserved energy)
+    - **Unserved Energy** — Electricity demand that could not be met (0 means the grid fully supplied the load)
+    - **Unserved %** — Percentage of demand not served (0% = perfect reliability in this simulation)
+    """)
+
     numeric_disp = dispatch_df.select_dtypes('number')
     st.dataframe(numeric_disp.style.format("{:,.0f}"), use_container_width=True)
 
@@ -296,6 +296,13 @@ elif page == "⚠️ Scenarios":
     cols[0].metric("Total Dispatched", f"{total_mwh:,.0f} MWh")
     cols[1].metric("Unserved Energy", f"{unserved_mwh:,.0f} MWh")
     cols[2].metric("Unserved %", f"{unserved_pct:.2f}%", delta_color="inverse")
+
+    st.markdown("""
+    **Explanation of metrics:**
+    - **Total Dispatched** — Total electricity supplied over 24 hours (equals total demand if no unserved energy)
+    - **Unserved Energy** — Electricity demand that could not be met (0 means the grid fully supplied the load)
+    - **Unserved %** — Percentage of demand not served (0% = perfect reliability in this simulation)
+    """)
 
     numeric_disp = dispatch_df.select_dtypes('number')
     st.dataframe(numeric_disp.style.format("{:,.0f}"), use_container_width=True)
