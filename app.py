@@ -125,9 +125,10 @@ if page == "🏠 Home":
 
     with col2:
         st.image(
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Lake_Turkana_Wind_Power.jpg/800px-Lake_Turkana_Wind_Power.jpg",
-            caption="Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid"
-        )
+    "https://upload.wikimedia.org/wikipedia/commons/9/9a/Lake_Turkana_Wind_Power.jpg",
+    caption="Lake Turkana Wind Power – one of Africa's largest wind farms powering Kenya's low-carbon grid"
+)
+
 
     st.divider()
     st.subheader("Key Benefits")
