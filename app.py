@@ -125,7 +125,7 @@ if page == "🏠 Home":
 
     with col2:
        st.image(
-    "https://raw.githubusercontent.com/wiseman-s/nuclear-renewable-grid-simulator/main/img%201.jpg",
+    "https://raw.githubusercontent.com/wiseman-s/nuclear-renewable-grid-simulator/main/img%202.jpg",
     caption="NRGS Kenya – Visualizing nuclear & renewable integration in the grid",
     use_column_width=True
 )
