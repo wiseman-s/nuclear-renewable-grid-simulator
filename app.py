@@ -200,7 +200,7 @@ with st.sidebar.expander("About NRGS"):
 if page == "🏠 Home":
 
     st.title(
-        "🇰🇪 Nuclear & Renewable Grid Simulator (NRGS)"
+        "Nuclear & Renewable Grid Simulator (NRGS)"
     )
 
     st.markdown(
